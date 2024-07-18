@@ -260,7 +260,7 @@ button:disabled {
     margin-left: 2px;
     /*margin-bottom: 10px; /* Adjust as needed to align with other elements */
     position: relative;
-    top: -55px; /* Align top with increment panel */
+    top: -45px; /* Align top with increment panel */
 }
 
 #result {
