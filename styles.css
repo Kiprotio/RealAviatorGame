@@ -149,8 +149,8 @@ button:disabled {
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
-    width: 45%;
-    margin-left: 20px;
+    width: 65%;
+    margin-left: 60px;
     height: 17px;
 }
 
@@ -162,7 +162,7 @@ button:disabled {
     text-align: center;
     align-self: center;
     cursor: pointer;
-    width: 70px;
+    width: 90px;
     height: 25px;
     color: white;
 }
@@ -175,7 +175,7 @@ button:disabled {
     text-align: center;
     align-self: center;
     cursor: pointer;
-    width: 70px;
+    width: 90px;
     height: 25px;
     color: gray;
 }
