@@ -353,7 +353,7 @@ button:disabled {
 
 .inner-toolbar {
     background-color: black;
-    padding: 10px;
+    padding: 0px;
     margin-top: 10px;
     border-radius: 10px;
     width: 100%;
