@@ -69,6 +69,7 @@ body {
     align-self: center;
     justify-self: center;
     height: 10px;
+    width: 2%;
 }
 
 .canvas {
