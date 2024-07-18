@@ -134,10 +134,11 @@ button:disabled {
 /*--------------------------*/
 
 .parent-panel {
-    width: 90%;
+    width: 85%;
     background-color: #cccccc6f;
     border-radius: 20px;
     padding: 20px;
+    height: 30%;
 }
 
 .top-panel {
