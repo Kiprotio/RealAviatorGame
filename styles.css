@@ -63,12 +63,12 @@ body {
     background-color: #eee;
     border: 1px solid #ccc;
     border-radius: 20px;
-    padding: 10px 15px;
+    padding: 5px 5px;
     font-size: 10px;
     text-align: center;
     align-self: center;
     justify-self: center;
-    height: 5px;
+    height: 3px;
     width: 2%;
 }
 
