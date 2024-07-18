@@ -187,16 +187,16 @@ button:disabled {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    height: 18px;
-    width: 55%; /* Reduced length by half */
+    height: 16px;
+    width: 50%; /* Reduced length by half */
 }
 
 .circle-btn {
     background-color: #fff;
     border: none;
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     padding: 7px;
     padding-top: 0px;
     font-size: 30px;
@@ -229,7 +229,7 @@ button:disabled {
 }
 
 .right-buttons {
-    margin-left: 5px; /* Pull right buttons closer to left buttons */
+    margin-left: 2px; /* Pull right buttons closer to left buttons */
 }
 
 .thin-btn {
