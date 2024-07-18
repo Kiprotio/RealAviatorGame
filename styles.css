@@ -63,7 +63,7 @@ body {
     background-color: #eee;
     border: 1px solid #ccc;
     border-radius: 20px;
-    padding: 0px 35px;
+    padding: 0px 25px;
     font-size: 10px;
     text-align: left;
     padding-bottom: 12px;
@@ -71,7 +71,7 @@ body {
     /*align-self: center;
     /*justify-self: center;*/
     height: 2px;
-    width: 9px;
+    width: 3px;
 }
 
 .canvas {
