@@ -254,10 +254,10 @@ button:disabled {
     font-size: 30px;
     font-weight: bolder;
     height: 15%; /* Set height to 90px */
-    width: 15%; /* Adjust width as needed */
+    width: 35%; /* Adjust width as needed */
     align-self: flex-start;
     margin-top: 0;
-    margin-left: 80px;
+    margin-left: 50px;
     margin-bottom: 10px; /* Adjust as needed to align with other elements */
     position: relative;
     top: -55px; /* Align top with increment panel */
