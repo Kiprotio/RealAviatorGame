@@ -134,7 +134,7 @@ button:disabled {
 /*--------------------------*/
 
 .parent-panel {
-    width: 100%;
+    width: 50%;
     background-color: #cccccc6f;
     border-radius: 20px;
     padding: 20px;
