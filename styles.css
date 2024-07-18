@@ -56,14 +56,14 @@ body {
 .previous-crashpoints {
     display: flex;
     justify-content: space-around;
-    margin: 5px 5px;
+    margin: 10px 5px;
 }
 
 .crashpoint-label {
     background-color: #eee;
     border: 1px solid #ccc;
     border-radius: 20px;
-    padding: 5px 18px;
+    padding: 8px 18px;
     font-size: 10px;
     text-align: left;
     padding-bottom: 12px;
