@@ -1,0 +1,424 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    width: fit-content;
+    background-color: black;    
+
+}
+
+.top-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #ef3535;
+    padding: 10px 20px;
+    height: 60px;
+}
+
+.toolbar-left, .toolbar-middle, .toolbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.cashout-button {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.balance-label {
+    margin-left: 20px;
+}
+
+.listview {
+    margin-left: 20px;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.previous-crashpoints {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.crashpoint-label {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    height: 10px;
+}
+
+.canvas {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+
+}
+
+#gameCanvas {
+    border: 1px solid gray;
+    border-radius: 20px;
+    background: #000;
+}
+
+/*-----------------------------*/
+.container {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#startBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#cashOutBtn {
+    background-color: #ce382d;/*#f44336;*/
+    color: white;
+}
+
+.multiplier {
+    font-size: 44px;
+    font-weight: bolder;
+    color:  #4CAF50;
+}
+
+
+/*--------------------------*/
+
+.parent-panel {
+    width: 96.5vw;
+    background-color: #cccccc6f;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.top-panel {
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 30%;
+    margin-left: 200px;
+    height: 17px;
+}
+
+.switch-btn {
+    background-color: rgba(128, 128, 128, 0.708);
+    border: none;
+    border-radius: 40px;
+    padding: 5px;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    width: 110%;
+    height: 25px;
+    color: white;
+}
+
+.switchh-btn {
+    background-color: #000;
+    border: none;
+    border-radius: 40px;
+    padding: 5px;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    width: 110%;
+    height: 25px;
+    color: gray;
+}
+
+.increment-panel {
+    background-color: #000;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 25px;
+    width: 15%; /* Reduced length by half */
+}
+
+.circle-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    padding-top: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    align-self: center;
+}
+
+.number-edit {
+    background: transparent;
+    border: none;
+    color: #fff;
+    text-align: center;
+    width: 140px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* Reduced gap */
+}
+
+.left-buttons, .right-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-buttons {
+    margin-left: 60px; /* Pull right buttons closer to left buttons */
+}
+
+.thin-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 190%;
+    height: 30px;
+    border-radius: 40px; /* Increased corner radius */
+}
+
+.bigbtn {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+    height: 150px; /* Set height to 90px */
+    width: 15%; /* Adjust width as needed */
+    align-self: flex-start;
+    margin-top: 0;
+    margin-left: 80px;
+    margin-bottom: 10px; /* Adjust as needed to align with other elements */
+    position: relative;
+    top: -55px; /* Align top with increment panel */
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/*.bottom-toolbar {
+    background-color: gray;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bet-button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.inner-toolbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/*.amount-input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.start-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}*/
+
+.gray-toolbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gray-label {
+    flex: 1;
+    text-align: left;
+    margin: 5px;
+    padding-left: 30px;
+}
+
+.gray-labelc {
+    flex: 1;
+    text-align: center;
+    margin: 5px;
+}
+
+.gray-labelr {
+    flex: 1;
+    text-align: right;
+    margin: 5px;
+}
+
+.inner-toolbar {
+    background-color: black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.scrollable-list {
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: #cccccc6f;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.scrollable-list div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.left {
+    text-align: left;
+    flex: 1;
+}
+
+.center {
+    text-align: center;
+    flex: 1;
+}
+
+.right {
+    text-align: right;
+    flex: 1;
+}
+
+.site-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+/* Toast styles */
+#toast-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+}
+
+.toast {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.toast.show {
+    opacity: 1;
+}

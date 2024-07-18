@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator Game Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- First Toolbar -->
+    <header class="top-toolbar">
+        <div class="toolbar-left">
+            <span class="title">Aviator</span>
+        </div>
+        <div class="toolbar-middle">
+            <button id="cashOutBtn" class="cashout-button">Cash Out</button>
+            <span class="balance-label">Bal: 500</span>
+        </div>
+        <div class="toolbar-right">
+            <select class="listview">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <img src="assets/person2.png" alt="Profile" class="profile-image">
+        </div>
+    </header>
+
+    <!-- Previous Crash Points Labels -->
+    <section class="previous-crashpoints">
+        <div class="crashpoint-label">1.23x</div>
+        <div class="crashpoint-label">2.34x</div>
+        <div class="crashpoint-label">3.45x</div>
+        <div class="crashpoint-label">4.56x</div>
+        <div class="crashpoint-label">5.67x</div>
+        <div class="crashpoint-label">6.78x</div>
+        <div class="crashpoint-label">3.45x</div>
+        <div class="crashpoint-label">4.56x</div>
+        <div class="crashpoint-label">5.67x</div>
+        <div class="crashpoint-label">6.78x</div>
+        <div class="crashpoint-label">3.45x</div>
+        <div class="crashpoint-label">4.56x</div>
+        <div class="crashpoint-label">5.67x</div>
+        <div class="crashpoint-label">6.78x</div>
+        <div class="crashpoint-label">3.45x</div>
+        <div class="crashpoint-label">4.56x</div>
+        <div class="crashpoint-label">5.67x</div>
+        <div class="crashpoint-label">6.78x</div>
+    </section>
+
+    <!-- Canvas -->
+    <div class="container">
+        <!--div class="buttons"-->
+            <!--button id="startBtn">Start</button-->
+            <!--button id="cashOutBtn" disabled>Cash Out</button-->
+        <!--/div-->
+        
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div id="toast-container"></div>
+    </div>
+    <script src="script.js"></script>
+
+    <div class="parent-panel">
+        <div class="top-panel">
+            <button class="switch-btn">Bet</button>
+            <button class="switchh-btn">Auto</button>
+        </div>
+        <div class="increment-panel">
+            <button class="circle-btn" id="decrement">-</button>
+            <input type="text" class="number-edit" id="number-edit" value="0.0">
+            <button class="circle-btn" id="increment">+</button>
+        </div>
+        <div class="buttons-container">
+            <div class="left-buttons">
+                <button class="thin-btn" id="left1-btn">100</button>
+                <button class="thin-btn" id="left2-btn">500</button>
+            </div>
+            <div class="right-buttons">
+                <button class="thin-btn" id="right1-btn">200</button>
+                <button class="thin-btn" id="right2-btn">5000</button>
+            </div>
+            <button class="bigbtn" id="big-btn">BET</button>
+        </div>
+        <p id="result"></p>
+    </div>
+
+    <!-- Bottom Toolbar with Bet and Start Button -->
+
+    <!-- Gray Toolbar with User Info and Scrollable List -->
+    <footer class="gray-toolbar">
+        <div class="label-container">
+            <div class="gray-label">User</div>
+            <div class="gray-labelc">Bet Kes X</div>
+            <div class="gray-labelr">Cash out Kes</div>
+        </div>
+        <div class="inner-toolbar">
+            <div class="scrollable-list">
+                <div class="label" id="label1">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label2">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label3">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label4">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label5">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label6">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label7">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label8">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label9">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label10">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label11">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label12">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label13">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label14">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label15">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label16">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label17">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label18">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label19">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label20">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label21">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label22">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label23">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label24">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label25">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label26">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label27">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label28">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label29">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+                <div class="label" id="label30">
+                    <span class="left">0723***555</span>
+                    <span class="center">5000</span>
+                    <span class="right">30,000</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>Powered by SPRIBE, All rights reserved</p>
+    </footer>
+</body>
+</html>
