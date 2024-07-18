@@ -150,7 +150,7 @@ button:disabled {
     gap: 10px;
     margin-bottom: 20px;
     width: 75%;
-    margin-left: 45px;
+    margin-left: 37px;
     height: 17px;
 }
 
@@ -162,7 +162,7 @@ button:disabled {
     text-align: center;
     align-self: center;
     cursor: pointer;
-    width: 90px;
+    width: 105px;
     height: 25px;
     color: white;
 }
@@ -175,7 +175,7 @@ button:disabled {
     text-align: center;
     align-self: center;
     cursor: pointer;
-    width: 90px;
+    width: 105px;
     height: 25px;
     color: gray;
 }
