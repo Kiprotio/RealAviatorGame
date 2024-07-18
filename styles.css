@@ -228,12 +228,8 @@ button:disabled {
     gap: 10px;
 }
 
-.left-buttons {
-    margin-left: 0px; /* Pull right buttons closer to left buttons */
-}
-
 .right-buttons {
-    margin-left: 0px; /* Pull right buttons closer to left buttons */
+    margin-left: 1px; /* Pull right buttons closer to left buttons */
 }
 
 .thin-btn {
