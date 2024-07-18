@@ -229,7 +229,7 @@ button:disabled {
 }
 
 .left-buttons {
-    margin-left: 2px; /* Pull right buttons closer to left buttons */
+    margin-left: 0px; /* Pull right buttons closer to left buttons */
 }
 
 .right-buttons {
