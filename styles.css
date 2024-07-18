@@ -188,7 +188,7 @@ button:disabled {
     align-items: center;
     margin-bottom: 20px;
     height: 25px;
-    width: 65%; /* Reduced length by half */
+    width: 45%; /* Reduced length by half */
 }
 
 .circle-btn {
@@ -229,7 +229,7 @@ button:disabled {
 }
 
 .right-buttons {
-    margin-left: 60px; /* Pull right buttons closer to left buttons */
+    margin-left: 20px; /* Pull right buttons closer to left buttons */
 }
 
 .thin-btn {
