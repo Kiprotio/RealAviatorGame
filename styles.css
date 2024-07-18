@@ -183,10 +183,10 @@ button:disabled {
 .increment-panel {
     background-color: #000;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     height: 25px;
     width: 55%; /* Reduced length by half */
 }
