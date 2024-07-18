@@ -158,7 +158,7 @@ button:disabled {
     background-color: rgba(128, 128, 128, 0.708);
     border: none;
     border-radius: 40px;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
     align-self: center;
     cursor: pointer;
