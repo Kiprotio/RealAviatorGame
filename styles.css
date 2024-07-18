@@ -188,7 +188,7 @@ button:disabled {
     align-items: center;
     margin-bottom: 20px;
     height: 25px;
-    width: 15%; /* Reduced length by half */
+    width: 65%; /* Reduced length by half */
 }
 
 .circle-btn {
@@ -253,7 +253,7 @@ button:disabled {
     cursor: pointer;
     font-size: 30px;
     font-weight: bolder;
-    height: 150px; /* Set height to 90px */
+    height: 15%; /* Set height to 90px */
     width: 15%; /* Adjust width as needed */
     align-self: flex-start;
     margin-top: 0;
