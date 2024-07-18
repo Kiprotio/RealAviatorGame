@@ -56,7 +56,7 @@ body {
 .previous-crashpoints {
     display: flex;
     justify-content: space-around;
-    margin: 0px 0;
+    margin: 5px 5px;
 }
 
 .crashpoint-label {
