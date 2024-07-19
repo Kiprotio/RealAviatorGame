@@ -129,8 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
                 // Calculate swinging and curving effect
                 t += 0.1; // Increase time for oscillation
-                let swing = Math.sin(t) * 40; // Swinging amplitude
-                let curve = Math.cos(t / 2) * 40; // Increase curving effect
+                let swing = Math.sin(t) * 30; // Swinging amplitude
+                let curve = Math.cos(t / 2) * 55; // Increase curving effect
                 let x = (multiplierr / 10) * canvas.width;  // Scale the x-coordinate
                 let y = canvas.height - (multiplierr / 13) * canvas.height + swing + curve;  // Scale the y-coordinate
 
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.stroke();
 
                 // Draw the plane image
-                ctx.drawImage(planeImage, x - 120, y - 100, 248, 106);
+                ctx.drawImage(planeImage, x - 85, y - 80, 168, 83);
 
                 // Draw the counter in the center of the canvas
                 drawCounter(ctx, multiplier);
