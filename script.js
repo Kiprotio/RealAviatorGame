@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.moveTo(0, canvas.height);
                 ctx.quadraticCurveTo(controlX, controlY, x, y); // Create a quadratic curve
                 ctx.strokeStyle = '#E4063A'//'#ef3535';
-                ctx.lineWidth = 5;
+                ctx.lineWidth = 3;
                 ctx.stroke();
 
                 // Draw the plane image
