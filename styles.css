@@ -64,7 +64,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 20px;
     padding: 0px 25px;
-    font-size: 15px;
+    font-size: 10px;
+    font-weight: bold;
     text-align: left;
     padding-bottom: 12px;
     /*padding-right: 12px;
