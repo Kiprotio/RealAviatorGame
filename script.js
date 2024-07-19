@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function startGame() {
-        crashPoint = generateCrashPoint(1.1, 3.0);
+        crashPoint = generateCrashPoint(1.1, 10.0);
         if (placed ==  1) {
             crashPoint = generateCrashPoint(1.1,2.5)
         }
