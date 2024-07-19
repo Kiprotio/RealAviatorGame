@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function drawCounter(ctx, multiplier) {
         if (multiplier >= crashPoint){
             if (userCashedOut == 0 || userCashedOut == 3 || userCashedOut == 5 || userCashedOut == 7 || userCashedOut == 9 || placed == 0){
-            ctx.font = '24px Arial';
+            ctx.font = 'normal 24px Arial';
             ctx.fillStyle = 'red';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
@@ -201,14 +201,14 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 resetGame();
                 //updateLabelValues();
-                ctx.font = '24px Arial';
+                ctx.font = 'normal 24px Arial';
                 ctx.fillStyle = 'white';
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
                 ctx.fillText(`Waiting For Next Round!`, canvas.width / 2, canvas.height / 2);
             }, 5000);
         } else {
-            ctx.font = '24px Arial';
+            ctx.font = 'normal 24px Arial';
             ctx.fillStyle = 'red';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 resetGame();
                 //updateLabelValues();
-                ctx.font = '24px Arial';
+                ctx.font = 'normal 24px Arial';
                 ctx.fillStyle = 'white';
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
@@ -226,8 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 5000);
         }
         }else{
-            //ctx.font = 'bolder 64px Arial';
-            ctx.font = '24px Arial';
+            ctx.font = 'bolder 64px Arial';
+            //ctx.font = '24px Arial';
             ctx.fillStyle = 'white';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
