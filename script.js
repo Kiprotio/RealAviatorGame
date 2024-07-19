@@ -226,7 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 5000);
         }
         }else{
-            ctx.font = 'bolder 64px Arial';
+            //ctx.font = 'bolder 64px Arial';
+            ctx.font = '24px Arial';
             ctx.fillStyle = 'white';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
