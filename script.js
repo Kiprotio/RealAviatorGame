@@ -147,8 +147,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.moveTo(0, canvas.height);
 
                 // Adjust control point to create a curve that bends towards the x-axis initially
-                let controlX = x / 1; // Position control point closer to the start
-                let controlY = canvas.height; // Place control point at the bottom of the canvas to create a dip
+                let controlX = x / 2; // Position control point closer to the start
+                let controlY = canvas.height/2; // Place control point at the bottom of the canvas to create a dip
                 ctx.quadraticCurveTo(controlX, controlY, x, y);
 
                 // Draw the curve to the bottom of the canvas
